@@ -15,4 +15,3 @@ workflows:
   node-linters:
     jobs:
       - lint-and-build
-      - build
