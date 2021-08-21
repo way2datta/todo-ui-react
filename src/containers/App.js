@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import React from 'react';
+import React from "react";
 import TodoInput from '../components/TodoInput';
 import generateRandomText from '../libs/randomString';
 import Listing from '../components/Listing';
