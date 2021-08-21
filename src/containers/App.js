@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import '../styles/App.css';
 import React from 'react';
 import TodoInput from '../components/TodoInput';
 import generateRandomText from '../libs/randomString';
