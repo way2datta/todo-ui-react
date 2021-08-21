@@ -2,17 +2,17 @@ version: 2.1
 orbs:
   node: circleci/node@4.1
 jobs:
-  run-lint:
+  lint-and-build:
     docker:
       - image: circleci/node:14.17.5
     working_directory: /tmp/src
     steps:
       - checkout
-      - run: npm install
       - run: npm ci
       - run: npm run lint
-      - run: npm run build
+      - run: npm run build   
 workflows:
   node-linters:
     jobs:
-      - run-lint
+      - lint-and-build
+      - build
